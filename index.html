@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página básica HTML</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Taxas</a></li>
+                <li><a href="#">Pacotes</a></li>
+            </ul>
+        </nav>
+
+        
+        <h1>Venha realizar a viagem dos seus sonhos</h1>
+    </header>
+
+    <section id="pacotes">
+        <h2>Bem-vindo à Minha Página Básica</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit, tellus in blandit condimentum, turpis
+            elit sagittis lectus, sed semper orci quam condimentum dolor. Etiam tempus tellus in leo fringilla, ut
+            fringilla ligula lobortis. Curabitur id semper velit. Curabitur iaculis, lorem convallis iaculis maximus,
+            nibh erat imperdiet turpis, eget ornare turpis tortor tempor nulla. Aenean tempus, enim ut laoreet commodo,
+            diam tellus lobortis sapien, in hendrerit tortor tellus id purus. Nam tempor orci ut elit consectetur, eget
+            tempor urna rhoncus. Vestibulum pretium ultricies ante in elementum.
+            <br><br>
+
+            <hr>
+        </p>
+        <div class="figuras">
+        <figure>
+            <img class="image-baloon" src="./paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol.jpg" alt="paisagem de montanhas com balões">
+            <figcaption>Paisagem de montanhas com dois balões de transporte.</figcaption>
+        </figure>
+    </div>
+    </section>
+    <main>
+        <section id="sobre">
+            <h3>Nam sit amet metus eros.</h3>
+            <p>Nam sit amet metus eros. Integer dapibus eget nisi at euismod. Vestibulum tempor, nunc id.</p>
+        </section>
+        <section>
+            <h2>Taxas e serviços</h2>
+            <p>Veja nossas taxas e serviços</p>
+
+            <table>
+                <caption>Descrição dos serviços e seus respectivos valores</caption>
+                <thead>
+
+
+                    <tr>
+                        <th>
+                            Serviço
+                        </th>
+                        <th>
+                            Valor
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Reserva de hotel
+                        </td>
+                        <td>
+                            R$ 500,00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Compra de passagens
+                        </td>
+                        <td>
+                            R$ 100,00
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+
+            <h2>Orçamento </h2>
+            <form method="GET" action="">
+                <fieldset>
+                    <legend>Dados da viagem</legend>
+                    <label>Nome</label><br>
+                    <input type="text" name="nome"><br>
+
+                    <label>Email</label><br>
+                    <input type="email" name="Email"><br><br>
+
+                    <label>Data de ida</label><br>
+                    <input type="date" name="data de ida"><br><br>
+
+                    <label>Data de volta</label><br>
+                    <input type="date" name="data de volta"><br><br>
+
+                    <label>Quantidade de pessoas</label><br>
+                    <input type="number" name="qtdepessoas"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quais serviços deseja contratar?</legend><br>
+                    <label>
+                        <br><input type="checkbox" name="passagens" value="passagens"> Compra de passagens
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="hospedagem" value="hospedagem"> Reserva de hospedagem
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="veículos" value="veículos"> Reserva de veículos
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Escolha a forma de pagamento</legend>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+                    </label>
+                    <label>
+                        <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Escolha o prazo para pagamento</legend>
+                    <select name="prazoPagamento">
+                        <option value="aVista">À vista</option>
+                        <option value="5x">5x sem juros</option>
+                        <option value="10x" selected>10x sem juros</option>
+                    </select>
+                </fieldset>
+
+
+                <label>Comentário</label><br>
+                <textarea rows="5" name="comentario"></textarea><br><br>
+
+                <button>Salvar</button>
+
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Amanda Zanella</p>
+    </footer>
+  
+</body>
+
+</html>
